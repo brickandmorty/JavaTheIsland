@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class FirstLove {
     public static void main(String[] args) {
 
+        System.out.println("Welcome to the program called 'First Love'!");
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Bitte geben Sie in der nächsten Zeile eine Zahl n an. " +
                 "Das Programm wird dann bis zu dieser Basis quadrieren.");
