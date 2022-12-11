@@ -28,7 +28,6 @@ public class FirstLove {
         return n * n;
 
     }
-
     public static int result (int n){
 
         for (int i = 1; i<= n; i++) {

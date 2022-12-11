@@ -10,7 +10,6 @@ public class Quadrierung {
 
         int userInput = scanner.nextInt();
         System.out.println("Vielen Dank für Ihren Input. Nachfolgend sehen Sie die Quadrierung von 1 bis zu Ihrer gewählten Zahl. ");
-
         System.out.println();
 
         square(userInput);
@@ -21,8 +20,8 @@ public class Quadrierung {
 
         int additionalInput = scanner.nextInt();
 
-        square(additionalInput);
-        additionalResult(additionalInput);
+        square(userInput);
+        additionalResult(userInput, additionalInput);
 
         System.out.println("Vielen Dank. Noch einen schönen Tag! ");
 
@@ -38,13 +37,13 @@ public class Quadrierung {
         return n;
     }
 
-    private static int additionalResult (int m) {
-        for (int i = m; i <= m; i++) {
+    private static int additionalResult (int n, int m) {
+        for (int i = n+1 ; i <= m; i++) {
 
             String neueTextausgabe = "Quadrat(" + i + ") = " + square(i);
             System.out.println(neueTextausgabe);
         }
-        return m;
+        return n + m;
     }
 
     public static int square(int n) {
