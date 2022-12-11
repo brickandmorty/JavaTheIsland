@@ -16,6 +16,16 @@ public class Quadrierung {
         square(userInput);
         result(userInput);
 
+        System.out.println("Ihre Berechnung ist nun beendet. " +
+                "Wenn Sie noch zusätzliche Ergebnisse sehen wollen, geben Sie erneut eine Zahl bis 100 ein: ");
+
+        int additionalInput = scanner.nextInt();
+
+        square(additionalInput);
+        additionalResult(additionalInput);
+
+        System.out.println("Vielen Dank. Noch einen schönen Tag! ");
+
     }
 
     private static int result(int n) {
@@ -28,6 +38,14 @@ public class Quadrierung {
         return n;
     }
 
+    private static int additionalResult (int m) {
+        for (int i = m; i <= m; i++) {
+
+            String neueTextausgabe = "Quadrat(" + i + ") = " + square(i);
+            System.out.println(neueTextausgabe);
+        }
+        return m;
+    }
 
     public static int square(int n) {
 
